@@ -77,7 +77,8 @@ body {
 .main-header {
     width: 100%;
     min-width: 320px;
-    padding-top: 63.125%;
+    height: 420px;
+    padding-top: 55.125%;
     padding-bottom: 43.125%;
     background-image: url('./images/image-main.png');
     background-repeat: no-repeat;
