@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.header {
+    width: 100vw;
+    min-width: 320px;
+    /*background: rgba(110, 118, 241, 0.6);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(5px); /* Note: backdrop-filter has minimal browser support */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.headers {
+    width: 100%;
+    /*position: relative;*/
+    background: rgba(110, 118, 241, 0.7);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(7px);
+    /*z-index: 999;*/
+}
+
+.nav-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav-wrap>.logo {
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.nav-wrap>.mobile-menu {
+    margin-top: 7px;
+    width: 7,5%;
+}
+
+.mobile-menu-wrap {
+    position: absolute;
+    z-index: -1;
+    background: #fff;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 0.3s;
+    display: block;
+}
+
+/*.div1 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -10px;
+    background-color: red;
+}*/
+
+.main-header {
+    width: 100%;
+    min-width: 320px;
+    padding-top: 63.125%;
+    padding-bottom: 43.125%;
+    background-image: url('./images/image-main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.header-title {
+    width: 90%;
+    margin: 0 auto;
+    /*display: grid;
+    grid-template-columns: 33.33%;
+    grid-template-rows: 33.33;
+    display: grid;
+    grid-template-areas: 
+    "Cleverland Cleverland"
+    "territory smart_ideas";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;*/
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 27px;
+    color: white;
+}
+
+.header-title .first {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    background: #757CD5;
+    background: rgba(117, 124, 213, 0.7);
+}
+
+.header-title .second {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    background: #757CD5;
+    background: rgba(117, 124, 213, 0.7);
+}
+
+/*.header-title :nth-child(1) {
+    grid-area: Cleverland;
+}
+
+.header-title :nth-child(2) {
+    grid-area: territory;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header-title :nth-child(3) {
+    grid-area: smart_ideas;
+    font-weight: 500;
+    font-size: 20px;
+}*/
+
+
+/*.header-title :nth-child(1)
+{
+    display: block;
+}
+.header-title :nth-child(2),
+.header-title :nth-child(3) {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    background: #757CD5;
+}
+
+.header-title :nth-child(3) {
+    margin-left: -9px;
+}*/
+
+.container {
+    width: 60%;
+    min-width: 320px;
+    background: red;
+    height: 200px;
+    display: grid;
+    grid-template-areas: 
+    "Cleverland Cleverland"
+    "territory smart_ideas";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container :nth-child(1) {
+    grid-area: Cleverland;
+}
+
+.container :nth-child(2) {
+    grid-area: territory;
+}
+
+.container :nth-child(3) {
+    grid-area: smart_ideas;
+}
+ 
