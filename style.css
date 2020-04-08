@@ -67,13 +67,6 @@ body {
     display: block;
 }
 
-/*.div1 {
-    position: absolute;
-    z-index: 1;
-    margin-top: -10px;
-    background-color: red;
-}*/
-
 .main-header {
     width: 100%;
     min-width: 320px;
@@ -86,20 +79,9 @@ body {
     background-size: cover;
 }
 
-
-
 .header-title {
     width: 90%;
     margin: 0 auto;
-    /*display: grid;
-    grid-template-columns: 33.33%;
-    grid-template-rows: 33.33;
-    display: grid;
-    grid-template-areas: 
-    "Cleverland Cleverland"
-    "territory smart_ideas";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;*/
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -124,61 +106,37 @@ body {
     background: rgba(117, 124, 213, 0.7);
 }
 
-/*.header-title :nth-child(1) {
-    grid-area: Cleverland;
+.adults {
+    width: 95%;
+    min-width: 304px;
+    margin: 0 auto;
+    font-family: Montserrat;
 }
 
-.header-title :nth-child(2) {
-    grid-area: territory;
-    font-weight: 500;
-    font-size: 20px;
+.adults__title {
+    width: 94.74%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
 }
 
-.header-title :nth-child(3) {
-    grid-area: smart_ideas;
-    font-weight: 500;
-    font-size: 20px;
-}*/
 
 
-/*.header-title :nth-child(1)
-{
-    display: block;
-}
-.header-title :nth-child(2),
-.header-title :nth-child(3) {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 20px;
-    background: #757CD5;
+.frontend__title {
+    width: 94.74%;
+    margin: 0 auto;
+    padding-top: 7.89%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF585F;
+    text-align: center;
 }
 
-.header-title :nth-child(3) {
-    margin-left: -9px;
-}*/
 
-.container {
-    width: 60%;
-    min-width: 320px;
-    background: red;
-    height: 200px;
-    display: grid;
-    grid-template-areas: 
-    "Cleverland Cleverland"
-    "territory smart_ideas";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-}
 
-.container :nth-child(1) {
-    grid-area: Cleverland;
-}
-
-.container :nth-child(2) {
-    grid-area: territory;
-}
-
-.container :nth-child(3) {
-    grid-area: smart_ideas;
-}
  
