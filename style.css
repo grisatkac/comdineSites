@@ -73,6 +73,7 @@ body {
     height: 420px;
     padding-top: 55.125%;
     padding-bottom: 43.125%;
+    margin-bottom: 15.625%;
     background-image: url('./images/image-main.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -106,6 +107,8 @@ body {
     background: rgba(117, 124, 213, 0.7);
 }
 
+/* adults courses(frontend, marketing, copywriting) info */
+
 .adults {
     width: 95%;
     min-width: 304px;
@@ -115,7 +118,7 @@ body {
 
 .adults__title {
     width: 94.74%;
-    margin: 0 auto;
+    margin: 0px auto 7.895% auto;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -123,7 +126,13 @@ body {
     text-align: center;
 }
 
+/* adults course frontend */
 
+.course-frontend {
+    background: #ffffff;
+    box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
+    border-radius: 8px;
+}
 
 .frontend__title {
     width: 94.74%;
@@ -136,6 +145,111 @@ body {
     color: #FF585F;
     text-align: center;
 }
+
+.frontend__content {
+    width: 94.74%;
+    margin: 0 auto;
+}
+
+.frontend__decription-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #232735;
+}
+
+.frontend__img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 65.625%;
+    margin-left: 18.92%;
+}
+
+.learn-more {
+    width: 33.22%;
+    max-width: 101px;
+    /*margin-left: 33.22%;*/
+    margin-left: calc(50% - 101px/2);
+}
+
+.get-info {
+    width: 100%;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-info p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #505565;
+}
+
+.get-info .arrow-right {
+    width: 6%;
+    color: #505565;
+}
+
+/* adults course marketing */
+
+.course-marketing {
+    background: #ffffff;
+    box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
+    border-radius: 8px;
+}
+
+.marketing__title {
+    width: 94.74%;
+    margin: 0 auto;
+    padding-top: 7.89%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF585F;
+    text-align: center;
+}
+
+.marketing__content {
+    width: 94.74%;
+    margin: 0 auto;
+}
+
+.marketing-description-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #232735;
+}
+
+.marketing__img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 65.625%;
+    margin-left: 18.92%;
+}
+
+/* child courses(programming, eanglish) */
+.childs {
+    width: 95%;
+    min-width: 304px;
+    margin: 0 auto;
+    font-family: Montserrat;
+}
+
 
 
 
