@@ -34,66 +34,168 @@
         <h5 class="adults__title">
             Курсы для взрослых
         </h5>
-        <div class="course-frontend">
-            <p class="frontend__title">Фронтенд-разработка</p>
-            <div class="frontend__content">
-                <p class="frontend__decription-text">Научим верстать сайты, используя HTML, CSS, JavaScript, разбираться во
-                    фреймворках и пользоваться библиотекой React, работать с контролером версий, понимать процессы создания и
-                    публикации сайта.</p>
-                <div class="frontend__img">
-                    <img src="./images/image-min-svg.svg" alt="Фронтенд-разработка">
+        <div class="courses-wrapper">
+            <!--в  диве ниже может быть .slide1-->
+            <div class="courses-list" id="courses-list">
+                <div class="course-frontend slide1">
+                    <p class="frontend__title">Фронтенд-разработка</p>
+                    <div class="frontend__content">
+                        <p class="frontend__decription-text">Научим верстать сайты, используя HTML, CSS, JavaScript, разбираться
+                            во
+                            фреймворках и пользоваться библиотекой React, работать с контролером версий, понимать процессы
+                            создания и
+                            публикации сайта.</p>
+                        <div class="frontend__img">
+                            <img src="./images/image-min-svg.svg" alt="Фронтенд-разработка">
+                        </div>
+                    </div>
+                    <div class="learn-more">
+                        <button class="get-info">
+                            <p>Подробнее</p>
+                            <img src="./images/arrow-right.svg" class="arrow-right">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-marketing slide1">
+                    <p class="marketing__title">Маркетинг</p>
+                    <div class="marketing__content">
+                        <p class="marketing__description-text">
+                            Научим, как приносить прибыль компании и зарабатывать с помощью интернет-маркетинга. Изучим
+                            конкурентов, рынок, ЦА, сайты и социальные сети, таргетированную, медийную, контекстную рекламу.
+                        </p>
+                        <div class="marketing__img">
+                            <img src="./images/marketing.svg" alt="Маркетинг">
+                        </div>
+                    </div>
+                    <div class="learn-more">
+                        <button class="get-info">
+                            <p>Подробнее</p>
+                            <img src="./images/arrow-right.svg" class="arrow-right">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-copywriting slide1">
+                    <p class="copywriting__title">Копирайтинг</p>
+                    <div class="copywriting__content">
+                        <p class="copywriting__decription-text">Тексты влияют на бизнес, научим правильно с ними работать -
+                            писать и верстать тексты разных стилей и форматов, расскажем, где искать заказы и как правильно
+                            работать с клиентами.</p>
+                        <div class="copywriting__img">
+                            <img src="./images/copywriting.svg" alt="Копирайтинг">
+                        </div>
+                    </div>
+                    <div class="learn-more">
+                        <p>Скоро</p>
+                    </div>
                 </div>
             </div>
-            <div class="learn-more">
-                <button class="get-info">
-                    <p>Подробнее</p>
-                    <img src="./images/arrow-right.svg" class="arrow-right">
-                </button>
+            <div class="controls">
+                <input type="radio" class="radio" name="slider" id="slide1" value="1" checked>
+                <label for="slide1"></label>
+                <input type="radio" class="radio" name="slider" id="slide2" value="2">
+                <label for="slide2"></label>
+                <input type="radio" class="radio" name="slider" id="slide3" value="3">
+                <label for="slide3"></label>
             </div>
         </div>
-        <div class="course-marketing">
-            <p class="marketing__title">Маркетинг</p>
-            <div class="marketing__content">
-                <p class="marketing__description-text">
-                    Научим, как приносить прибыль компании и зарабатывать с помощью интернет-маркетинга. Изучим конкурентов, рынок, ЦА, сайты и социальные сети, таргетированную, медийную, контекстную рекламу.
-                </p>
-                <div class="marketing__img">
-                    <img src="./images/marketing.svg" alt="Маркетинг">
-                </div>
-            </div>
-            <div class="learn-more">
-                <button class="get-info">
-                    <p>Подробнее</p>
-                    <img src="./images/arrow-right.svg" class="arrow-right">
-                </button>
-            </div>
-
-        </div>
-        <div class="course-copywriting">
-            <p class="copywriting__title">Копирайтинг</p>
-            <div class="copywriting__content">
-                <p class="copywriting__decription-text">Тексты влияют на бизнес, научим правильно с ними работать - писать и верстать тексты разных стилей и форматов, расскажем, где искать заказы и как правильно работать с клиентами.</p>
-                <div class="copywriting__img">
-                    <img src="./images/copywriting.svg" alt="Копирайтинг">
-                </div>
-            </div>
-            <div class="learn-more">
-                <p>Скоро</p>
-            </div>
-        </div>
+        
     </section>
     <section class="childs">
         <h5 class="chidls__title">
             Курсы для детей
         </h5>
-        <div class="childs__courses">
-            <div class="course-programming"></div>
-            <div class="course-english"></div>
-            <div class="learn-more">Подробнее</div>
+        <div class="courses-wrapper">
+            <div class="courses-list" id="courses-list2">
+                <div class="course-programming slide1">
+                    <p class="programming_title">Программирование</p>
+                    <div class="programming__content">
+                        <p class="programming__description-text">
+                            Если ваш ребенок любит проводить время за компьютером,
+                            пора записать его в школу программирования Cleverland. 
+                            Учим знаниям, которые точно пригодятся во взрослой жизни!
+                        </p>
+                        <div class="programming__img">
+                            <img src="./images/ART-svg.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="learn-more">
+                        <button class="get-info">
+                            <p>Подробнее</p>
+                            <img src="./images/arrow-right.svg" class="arrow-right">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-english slide1">
+                    <p class="english_title">Английский язык</p>
+                    <div class="english__content">
+                        <p class="english__decription-text">
+
+                        </p>
+                        <div class="english__img">
+                            <img src="./images/ART-en-svg.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="learn-more">
+                        <p>Скоро</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <input type="radio" class="radio" name="slider2" id="slide4" value="1" checked>
+                <label for="slide4"></label>
+                <input type="radio" class="radio" name="slider2" id="slide5" value="2">
+                <label for="slide5"></label>
+            </div>
+        </div>
         </div>
     </section>
+    <section class="rent">
+        <h5 class="rent__title">
+            Аренда помещений
+        </h5>
+        <div class="rent__wrapper">
+            <div class="rent__area">
+                <p class="area__title">Ивент-пространство</p>
+                <p class="area__decsription-text">Проведите идеальное мероприятие на
+                    нашей площадке. Мы предоставим оборудование для комфортной работы:
+                    ноутбук, проектор с экраном, флипмарт, и вкусный кофе для
+                    приятного перерыва.
+                </p>
+                <div class="area__img">
+                    <img src="./images/Group-svg.svg" alt="">
+                </div>
+                <div class="learn-more">
+                    <button class="get-info">
+                        <p>Связаться</p>
+                        <img src="./images/arrow-right.svg" class="arrow-right">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
 
+        <h5 class="contact-us-title">Остались вопросы?</h5>
+        <div class="main-content">
+            <form class="form">
+                <input type="text" name="" id="" placeholder="Имя">
+                <input type="tel" name="" id="" placeholder="Телефон">
+                <button class='contact-us-button'>Получить консультацию</button>
+            </form>
+            <div class="get-consultation">
+                
+            </div>
+            <div class="contact-info">
+                <address>г.Орша, ул.Мира,д.8,оф.23(2 этаж)</address>
+                <a href="tel:+375295694550">+375295694550</a>
+                <a href="mailto:hello@cleverland.by">hello@cleverland.by</a>
+            </div>
+        </div>
+        
+    </section>
+    
 
+    
     <script src="./index.js"></script>
 </body>
 </html>
