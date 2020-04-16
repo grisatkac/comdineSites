@@ -1,5 +1,5 @@
-const mobileMenu = document.querySelector('.mobile-menu');
-const menu = document.querySelector('.mobile-menu-wrap');
+const mobileMenu = document.querySelector('.mobile-menu-button');
+const menu = document.querySelector('.mobile-menu');
 let isOpened = false;
 
 mobileMenu.addEventListener('click', () => {
@@ -75,10 +75,11 @@ function slide(control, items, prev, next) {
       posX2 = 0,
       posInitial,
       posFinal,
-      threshold = 100,
+      
       slides = items.getElementsByClassName('slide1'),
       slidesLength = slides.length,
       slideSize = items.getElementsByClassName('slide1')[0].offsetWidth,
+      threshold = slideSize / 2.5,
       firstSlide = slides[0],
       lastSlide = slides[slidesLength - 1],
       cloneFirst = firstSlide.cloneNode(true),
@@ -240,10 +241,13 @@ function slide(control, items, prev, next) {
     }
   });
 }
-
+console.log('length doc: ', document.body.offsetWidth);
 /*slide(slider, sliderItems, prev, next);*/
-slide(controls,sliderItems );
-slide(controls2, sliderItems2);
+if ( document.body.offsetWidth < 768 ) {
+  slide(controls,sliderItems );
+  slide(controls2, sliderItems2);
+}
+
 
 
 

@@ -11,8 +11,17 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    
 }
+
+a {
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #505565;
+}
+
 
 .header {
     width: 100vw;
@@ -28,7 +37,7 @@ body {
 }
 
 .headers {
-    width: 100%;
+    /*width: 100%;*/
     /*position: relative;*/
     background: rgba(110, 118, 241, 0.7);
     mix-blend-mode: normal;
@@ -47,6 +56,7 @@ body {
 
 .nav-wrap>.logo {
     color: #fff;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -54,33 +64,45 @@ body {
     text-decoration: none;
 }
 
-.nav-wrap>.mobile-menu {
+.nav-wrap>.mobile-menu-button {
     margin-top: 7px;
     width: 7,5%;
 }
 
-.mobile-menu-wrap {
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     z-index: -1;
     background: #fff;
     width: 100%;
     transform: translateY(-300%);
     transition: 0.3s;
-    display: block;
+    padding-left: 5%;
+}
+
+.mobile-menu .mobile-menu-link {
+    border-bottom: 1px solid rgba(13, 5, 37, 0.1);
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+
+.mobile-menu .mobile-menu-link:last-child {
+    border-bottom: none;
 }
 
 .main-header {
     width: 100%;
     min-width: 320px;
     height: 420px;
-    padding-top: 55.125%;
+    padding-top: 164px;
     padding-bottom: 43.125%;
     margin-bottom: 15.625%;
     background-image: url('./images/image-main.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    white-space: normal;
 }
 
 .header-title {
@@ -94,17 +116,21 @@ body {
     color: white;
 }
 
+.header-title h4 {
+    white-space: pre-line;
+}
+
 .header-title .first {
-    font-style: normal;
+    /*font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 32px;*/
     /*background: #757CD5;*/
     background: rgba(117, 124, 213, 0.7);
     
 }
 
 .header-title .second {
-    font-style: normal;
+    /*font-style: normal;*/
     font-weight: 500;
     font-size: 20px;
     /*background: #757CD5;*/
@@ -389,7 +415,6 @@ body {
 	opacity: 1;
 }
 
-
 /* child courses(programming, eanglish) */
 .childs {
     width: 100%;
@@ -629,7 +654,7 @@ body {
     border: none;
     background: transparent;
     border-bottom: 1px solid #E9E8E5;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 24px;
     color: #8B90A0;
 }
@@ -644,9 +669,7 @@ body {
     color: #fff;
     background: #FF505F;
     border-radius: 24px;
-    
     cursor: pointer;
-    
 }
 
 .contact-info {
@@ -663,8 +686,347 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #505565;
+    margin-bottom: 5%;
 }
 
-.contact-info a {
-    text-decoration: none;
+@media screen and (min-width: 768px) and (max-width: 833px) {
+    .nav-wrap {
+        padding-left: 8.33%;
+        padding-right: 8.724%;
+    }
+
+    .nav-wrap>.logo {
+        font-style: 600;
+        font-size: 22px;
+    }
+
+    .nav-wrap>.mobile-menu-button {
+        margin-top: 2.87%;
+        margin-bottom: 2.87%;
+    }
+
+    .main-header {
+        height: 800px;
+        background-image: url('./images/imgs-768/image-main.png');
+        margin-bottom: 13.02%;
+    }
+
+    .header-title {
+        width: 69.79%;
+        margin-left: 6.25%;
+        padding-top: 144px;
+        font-weight: 600;
+        font-size: 39px;
+        line-height: 48px;
+    }
+
+    .header-title h4 {
+        white-space: normal;
+    }
+
+    .header-title .second {
+        font-weight: 600;
+        font-size: 39px;
+    }
+
+    /*.adults {
+        width: 91.67%;
+        margin-bottom: 13%;
+    }*/
+
+    .adults {
+        margin-bottom: 13%;
+    }
+
+    .adults__title {
+        width: 90.91%;
+        margin: 0 auto;
+        font-size: 39px;
+        line-height: 60px;
+    }
+
+    .courses-wrapper {
+        width: 100%;
+    }
+
+    .courses-list {
+        display: block;
+        width: 100%;
+        left: 0%;
+    }
+
+    .course-frontend {
+        width: 91.67%;
+        margin: 4.55% auto 0px auto;
+        padding: 4.17% 4.17% 4.77%  4.17%;
+        margin-bottom: 4.17%;
+    }
+
+    .frontend__title {
+        width: 56.82%;
+        margin: 0px 0px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: start;
+    }
+
+    .frontend__content {
+        width: 100%;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .frontend__decription-text {
+        text-align: initial
+    }
+
+    .frontend__img {
+        width: 30.31%;
+        margin-left: none;
+    }
+
+    .learn-more {
+        width: 16.05%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .get-info {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .get-info .arrow-right {
+        width: 6.5%;
+    }
+
+    .course-marketing {
+        width: 91.67%;
+        margin: 0 auto;
+        padding: 4.17% 4.17% 4.77%  4.17%;
+        margin-bottom: 4.17%;
+    }
+
+    .marketing__title {
+        width: 56.82%;
+        margin: 0px 0px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: start;
+    }
+
+    .marketing__content {
+        width: 100%;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .marketing__description-text {
+        text-align: start;
+    }
+
+    .marketing__img {
+        width: 30.31%;
+        margin-left: none;
+    }
+
+    .course-copywriting {
+        width: 91.67%;
+        margin: 0 auto;
+        padding: 4.17% 4.17% 4.77%  4.17%;
+        margin-bottom: 4.17%;
+    }
+
+    .copywriting__title {
+        width: 56.82%;
+        margin: 0px 0px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: start;
+    }
+
+    .copywriting__content {
+        width: 100%;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copywriting__decription-text {
+        text-align: initial
+    }
+
+    .copywriting__img {
+        width: 30.31%;
+        margin-left: none;
+    }
+
+    .course-copywriting>.learn-more {
+        width: 8%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .course-copywriting>.learn-more p {
+        font-size: 16px;
+    }
+
+    .controls {
+        display: none;
+    }
+
+    .childs {
+        margin-bottom: 13%;
+    }
+
+    .childs__title {
+        width: 90.91%;
+        margin: 0px auto;
+        font-size: 39px;
+        line-height: 60px;
+    }
+
+    .childs .courses-list {
+        display: block;
+        width: 100%;
+        left: 0%;
+    }
+
+    .course-programming {
+        width: 91.67%;
+        margin: 4.55% auto 0px auto;
+        padding: 4.17% 4.17% 4.77%  4.17%;
+        margin-bottom: 4.17%;
+    }
+
+    .programming_title {
+        width: 56.82%;
+        margin: 0px 0px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: start;
+    }
+
+    .programming__content {
+        width: 100%;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .programming__description-text {
+        text-align: initial
+    }
+
+    .programming__img {
+        width: 30.31%;
+        margin-left: none;
+    }
+
+    .course-english {
+        width: 91.67%;
+        margin: 0 auto;
+        padding: 4.17% 4.17% 4.77%  4.17%;
+        margin-bottom: 6.5%;
+    }
+
+    .english_title {
+        width: 56.82%;
+        margin: 0px 0px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: start;
+    }
+
+    .english__content {
+        width: 100%;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .english__decription-text {
+        text-align: initial
+    }
+
+    .english__img {
+        width: 30.31%;
+        margin-left: none;
+    }
+
+    .course-english>.learn-more {
+        width: 8%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .course-english>.learn-more p {
+        font-size: 16px;
+    }
+
+    .rent {
+        width: 91.67%;
+        padding: 4.17% 4.17% 4.77%  4.17%;
+        margin-bottom: 13%;
+    }
+
+    .rent__title {
+        width: 90.91%;
+        margin: 0px auto 4.55% auto;
+        font-size: 39px;
+        line-height: 60px;
+    }
+
+    .area__title {
+        width: 56.82%;
+        margin: 0px 0px;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: start;
+    }
+
+    .area__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .area__decsription-text {
+        text-align: start;
+    }
+
+    .contact-us {
+        margin: 0 auto;
+        padding-top: 6.77%;
+        padding-bottom: 6.5%;;
+    }
+
+    .contact-us-title {
+        font-size: 39px;
+        line-height: 60px;  
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-bottom: 6.5%;
+    }
+
+    .contact-us form {
+        width: 39.71%;
+    }
+
+    .contact-us form :nth-child(1) {
+        margin-bottom: 13.77%;
+    }
+    .contact-us form :nth-child(2) {
+        margin-bottom: 16.57%;
+    }
+
+    .contact-us .contact-us-button {
+        margin-bottom: 26.49%;
+    }
+
+    .contact-info address,
+    .contact-info a{
+        margin-bottom:  2.08%;
+    }
 }
