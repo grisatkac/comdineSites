@@ -1,3 +1,113 @@
+/*const initializeSlick = () => {
+  $(".slider").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      arrows: false,
+      slidesToScroll: 1,
+      mobileFirst: true,
+      centerPadding: '60px',
+
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: "unslick"
+          }
+      ]
+  });
+
+  $(".slider").slick("resize");
+}
+
+$(window).on("resize", () => {
+  if (document.documentElement.clientWidth < 1200) {
+      if (!$(".slider").hasClass("slick-initialized")) {
+          $(".slider").slick({
+              dots: true,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 1,
+              arrows: false,
+              slidesToScroll: 1,
+              mobileFirst: true,
+              responsive: [
+                  {
+                      breakpoint: 1000,
+                      settings: {
+                          slidesToShow: 2,
+                      }
+                  },
+                  {
+                      breakpoint: 1200,
+                      settings: "unslick"
+                  }
+              ]
+          });
+      }
+      $(".advantages-slider").slick("resize");
+      $(".course-slider").slick("resize");
+  }
+});
+
+$(document).ready(() => {
+  initializeSlick();
+});*/
+
+const initializeSlick = () => {
+  $(".slider").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      arrows: false,
+      slidesToScroll: 1,
+      mobileFirst: true,
+      responsive: [
+          {
+              breakpoint: 768,
+              settings: "unslick"
+          }
+      ]
+      
+  });
+
+  $(".second-slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    arrows: false,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    responsive: [
+      {
+          breakpoint: 768,
+          settings: "unslick"
+      }
+  ]
+    
+});
+
+ 
+  $(".slider").slick("resize");
+  $(".second-slider").slick("resize");
+}
+
+$(window).on("resize", () => {
+  if (document.documentElement.clientWidth < 768) {
+      $(".slider").slick("resize");
+      $(".second-slider").slick("resize");
+  }
+});
+
+
+
+$(document).ready(() => {
+  initializeSlick();
+});
+
+
 const mobileMenu = document.querySelector('.mobile-menu-button');
 const menu = document.querySelector('.mobile-menu');
 let isOpened = false;

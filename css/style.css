@@ -33,7 +33,7 @@ a {
     top: 0;
     left: 0;
     z-index: 999;
-    
+    display: none;
 }
 
 .headers {
@@ -42,7 +42,14 @@ a {
     background: rgba(110, 118, 241, 0.7);
     mix-blend-mode: normal;
     backdrop-filter: blur(7px);
+    padding-left: 5%;
+    padding-right: 5%;
     /*z-index: 999;*/
+}
+
+.preheader,
+.nav-menu {
+    display: none;
 }
 
 .nav-wrap {
@@ -50,8 +57,7 @@ a {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    
 }
 
 .nav-wrap>.logo {
@@ -65,7 +71,8 @@ a {
 }
 
 .nav-wrap>.mobile-menu-button {
-    margin-top: 7px;
+    margin-top: 2.43%;
+    margin-bottom: 2.43%;
     width: 7,5%;
 }
 
@@ -98,7 +105,7 @@ a {
     padding-top: 164px;
     padding-bottom: 43.125%;
     margin-bottom: 15.625%;
-    background-image: url('./images/image-main.png');
+    /*background-image: url('./images/image-main.png');*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -140,15 +147,16 @@ a {
 /* adults courses(frontend, marketing, copywriting) info */
 
 .adults {
-    width: 95%;
+    /*width: 95%;
     min-width: 304px;
-    margin: 0 auto;
+    margin: 0 auto;*/
+    min-width: 320px;
     font-family: Montserrat;
 }
 
 .adults__title {
     width: 94.74%;
-    margin: 0px auto 7.895% auto;
+    margin: 0px auto 0px  auto;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -164,9 +172,11 @@ a {
 }*/
 
 .courses-wrapper {
-    overflow: hidden;
+    width: 100%;
+    margin-top: 7.895%;
+    /*overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: 1;*/
 }
 .courses-list {
     display: flex;
@@ -185,11 +195,17 @@ a {
 /* adults course frontend */
 
 .course-frontend {
-    width: 20%;
+    /*width: 20%;*/
     background: #ffffff;
+
     box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
     border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 8px;
+    
     /*margin-bottom: 8.88%;*/
+    box-sizing: border-box;
+    
 }
 
 .frontend__title {
@@ -229,9 +245,10 @@ a {
 .learn-more {
     width: 33.22%;
     max-width: 101px;
+    margin: 0 auto;
     /*margin-left: 33.22%;*/
-    margin-left: calc(50% - 101px/2);
-    margin-bottom: 7.895%;
+    /*margin-left: calc(50% - 101px/2);
+    margin-bottom: 7.895%;*/
     
 }
 
@@ -265,10 +282,12 @@ a {
 /* adults course marketing */
 
 .course-marketing {
-    width: 20%;
+    /*width: 20%;*/
     background: #ffffff;
     box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
     border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 8px;
     /*margin-bottom: 16.78%;*/
 }
 
@@ -309,10 +328,11 @@ a {
 /* adult course copywriting */
 
 .course-copywriting {
-    width: 20%;
+    /*width: 20%;*/
     background: #ffffff;
     box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
     border-radius: 8px;
+    margin-top: 8px;
     /*margin-bottom: 17.44%;*/
 }
 
@@ -432,7 +452,7 @@ a {
     
 }*/
 
-.chidls__title {
+.childs__title {
     width: 94.74%;
     margin: 0px auto 7.895% auto;
     font-style: normal;
@@ -443,9 +463,10 @@ a {
 }
 
 .courses-wrapper {
-    width: 95%;
+    /*width: 95%;*/
     min-width: 304px;
     margin: 0 auto;
+    margin-top: 7.895%;
 
 }
 
@@ -464,7 +485,7 @@ a {
 .course-programming {
     width: 25%;
     background: #ffffff;
-    box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
+    box-shadow: 0px 1px 8px rgba(61, 44, 111, 0.1);
     border-radius: 8px;
 }
 
@@ -570,8 +591,7 @@ a {
     font-family: Montserrat;
     margin-bottom: 7.8%;
     padding-top: 14.375%;
-    box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
-    border-radius: 8px;
+    
 }
 
 .rent__title {
@@ -582,6 +602,13 @@ a {
     font-size: 22px;
     line-height: 32px;
     text-align: center;
+}
+
+.rent__wrapper {
+    width: 94.74%;
+    margin: 0 auto;
+    box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
+    border-radius: 8px;
 }
 
 .area__title {
@@ -689,10 +716,12 @@ a {
     margin-bottom: 5%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 833px) {
-    .nav-wrap {
+@media screen and (min-width: 768px) {
+    
+    .headers {
         padding-left: 8.33%;
         padding-right: 8.724%;
+
     }
 
     .nav-wrap>.logo {
@@ -758,7 +787,7 @@ a {
     .course-frontend {
         width: 91.67%;
         margin: 4.55% auto 0px auto;
-        padding: 4.17% 4.17% 4.77%  4.17%;
+        padding: 0 4.17% 4.77%  4.17%;
         margin-bottom: 4.17%;
     }
 
@@ -775,6 +804,7 @@ a {
         margin: 0px 0px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .frontend__decription-text {
@@ -804,7 +834,7 @@ a {
     .course-marketing {
         width: 91.67%;
         margin: 0 auto;
-        padding: 4.17% 4.17% 4.77%  4.17%;
+        padding: 0 4.17% 4.77%  4.17%;
         margin-bottom: 4.17%;
     }
 
@@ -821,6 +851,7 @@ a {
         margin: 0px 0px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .marketing__description-text {
@@ -835,7 +866,7 @@ a {
     .course-copywriting {
         width: 91.67%;
         margin: 0 auto;
-        padding: 4.17% 4.17% 4.77%  4.17%;
+        padding: 0 4.17% 4.77%  4.17%;
         margin-bottom: 4.17%;
     }
 
@@ -852,6 +883,7 @@ a {
         margin: 0px 0px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .copywriting__decription-text {
@@ -878,6 +910,8 @@ a {
     }
 
     .childs {
+        margin-top: 0;
+        padding-top: 6.5%;
         margin-bottom: 13%;
     }
 
@@ -897,7 +931,7 @@ a {
     .course-programming {
         width: 91.67%;
         margin: 4.55% auto 0px auto;
-        padding: 4.17% 4.17% 4.77%  4.17%;
+        padding: 0 4.17% 4.77%  4.17%;
         margin-bottom: 4.17%;
     }
 
@@ -914,6 +948,7 @@ a {
         margin: 0px 0px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .programming__description-text {
@@ -928,7 +963,7 @@ a {
     .course-english {
         width: 91.67%;
         margin: 0 auto;
-        padding: 4.17% 4.17% 4.77%  4.17%;
+        padding: 0 4.17% 4.77%  4.17%;
         margin-bottom: 6.5%;
     }
 
@@ -945,6 +980,7 @@ a {
         margin: 0px 0px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .english__decription-text {
@@ -966,10 +1002,21 @@ a {
         font-size: 16px;
     }
 
-    .rent {
+    /*.rent {
         width: 91.67%;
         padding: 4.17% 4.17% 4.77%  4.17%;
         margin-bottom: 13%;
+    }*/
+
+    .rent {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .rent__wrapper {
+        width: 91.67%;
+        margin: 0 auto;
+        padding: 0 4.17% 4.77%  4.17%;
     }
 
     .rent__title {
@@ -1029,4 +1076,198 @@ a {
     .contact-info a{
         margin-bottom:  2.08%;
     }
+}
+
+
+@media screen and (min-width: 834px){
+    .preheader {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 1.48%;
+        padding-bottom: 2.4%;
+    }
+
+    .preheader .preheader-link {
+        color: #fff;
+        margin-left: 4.36%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header .preheader .preheader-link img {
+        margin-right: 6px;
+    }
+
+    .nav-wrap>.mobile-menu-button {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .logo {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .nav-menu {
+        /*display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;*/
+        display: block;
+        
+    }
+
+    .nav-menu .nav-link,
+    .nav-menu .nav-button {
+        color: #fff;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+
+    }
+
+    .nav-menu .nav-link {
+        margin-right: 32px;
+    }
+
+    .nav-menu .nav-button {
+        box-sizing: border-box;
+        border-radius: 19px;
+        border: 1px solid #FFFFFF;
+        padding: 3px 12px;
+        transition: 0.2s;
+        background: rgba(110, 118, 241, 1);
+        margin-bottom: 3.5%;
+    }
+
+    .main-header {
+        background-image: url('./images/imgs-834/image-main.png');
+        margin-bottom: 11.99%;
+    }
+
+    .header-title {
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 64px;
+    }
+
+    .adults {
+        margin-bottom: 11.99%;
+    }
+
+    .adults__title {
+        width: 87.5%;
+    }
+
+    .childs {
+        margin-bottom: 0px;
+    }
+
+    .childs__title {
+        width: 87.5%;
+        margin-block-end: 0px;
+    }
+
+    .course-english{
+        margin-bottom: 5.99%;
+    }
+
+    .rent {
+        padding-top: 11.9%;
+
+    }
+
+    @media screen and (min-width: 1024px) {
+        .headers {
+            padding-left: 5%;
+            padding-right: 5%;
+    
+        }
+
+        .main-header {
+            margin-bottom: 9.77%;
+        }
+
+        .course-frontend {
+            width: 93.97%;
+            padding: 3.125% auto 0px auto;
+        }
+
+        .frontend__title {
+            padding-top: 3.48%;
+        }
+
+        .course-marketing {
+            width: 93.97%;
+        }
+
+        .marketing__title {
+            padding-top: 3.48%;
+        }
+
+        .course-copywriting {
+            width: 93.97%;
+        }
+
+        .copywriting__title {
+            padding-top: 3.48%;
+        }
+
+        .course-programming {
+            width: 89.84%;
+        }
+
+        .programming_title {
+            padding-top: 3.48%;
+        }
+
+        .course-english {
+            width: 89.84%;
+        }
+
+        .english_title {
+            padding-top: 3.48%;
+        }
+
+        /*.rent {
+            width: 90%;
+        }*/
+        .rent__wrapper {
+            width: 89.84%;
+        }
+
+        .rent__area {
+            width: 100%;
+            /*box-shadow: 0px 3px 15px rgba(61, 44, 111, 0.1);
+            border-radius: 8px;*/
+        }
+
+    }
+
+}
+
+.footer__map {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer__map iframe {
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 32px;
+
+
 }

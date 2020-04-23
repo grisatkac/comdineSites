@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js
+    "></script> 
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    
 </head>
 <body>
+    
     <header class="header"> 
         <div class="headers">
-            <!--<div class="preheader"></div>-->
+            <div class="preheader">
+                <span class="preheader-link"> <img src="./images/imgs-834/icon-map.svg" alt="geo"> г. Орша</span>
+                <a href="tel:+375295694550" class="preheader-link"> <img src="./images/imgs-834/icon-phone.svg" alt="phone">+375 29 569 45</a>
+                <a href="mailto:hello@cleverland.by" class="preheader-link"><img src="./images/imgs-834/icon-email.svg" alt="email"> info@clevertec.ru</a>
+            </div>
             <div class="nav-wrap">
                 <a href="" class="logo">Cleverland</a>
                 <div class="mobile-menu-button">
                     <img src="./images/icon_menu.svg" alt="menu">
                 </div>
+                <nav class="nav-menu">
+                    <a href="" class="nav-link">Курсы</a>
+                    <a href="" class="nav-link">Вопросы</a>
+                    <button class="nav-button">Записаться</button>
+                </nav>
             </div>
         </div>
-        <!--<div class="mobile-menu">
-            menu
-        </div>-->
+        
         <div class="mobile-menu">
             <a href="#" class="mobile-menu-link">Курсы</a>
             <a href="#" class="mobile-menu-link">Вопросы</a>
@@ -44,8 +58,19 @@
         </h5>
         <div class="courses-wrapper">
             <!--в  диве ниже может быть .slide1-->
-            <div class="courses-list" id="courses-list">
-                <div class="course-frontend slide1">
+            <!--<div class="courses-list" id="courses-list">
+                
+            </div>
+            <div class="controls">
+                <input type="radio" class="radio" name="slider" id="slide1" value="1" checked>
+                <label for="slide1"></label>
+                <input type="radio" class="radio" name="slider" id="slide2" value="2">
+                <label for="slide2"></label>
+                <input type="radio" class="radio" name="slider" id="slide3" value="3">
+                <label for="slide3"></label>
+            </div>-->
+            <div class="slider">
+                <div class="course-frontend ">
                     <p class="frontend__title">Фронтенд-разработка</p>
                     <div class="frontend__content">
                         <p class="frontend__decription-text">Научим верстать сайты, используя HTML, CSS, JavaScript, разбираться
@@ -64,7 +89,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="course-marketing slide1">
+                <div class="course-marketing ">
                     <p class="marketing__title">Маркетинг</p>
                     <div class="marketing__content">
                         <p class="marketing__description-text">
@@ -82,7 +107,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="course-copywriting slide1">
+                <div class="course-copywriting ">
                     <p class="copywriting__title">Копирайтинг</p>
                     <div class="copywriting__content">
                         <p class="copywriting__decription-text">Тексты влияют на бизнес, научим правильно с ними работать -
@@ -97,23 +122,16 @@
                     </div>
                 </div>
             </div>
-            <div class="controls">
-                <input type="radio" class="radio" name="slider" id="slide1" value="1" checked>
-                <label for="slide1"></label>
-                <input type="radio" class="radio" name="slider" id="slide2" value="2">
-                <label for="slide2"></label>
-                <input type="radio" class="radio" name="slider" id="slide3" value="3">
-                <label for="slide3"></label>
-            </div>
         </div>
         
     </section>
     <section class="childs">
-        <h5 class="chidls__title">
+        <h5 class="childs__title">
             Курсы для детей
         </h5>
+        
         <div class="courses-wrapper">
-            <div class="courses-list" id="courses-list2">
+            <div class="second-slider">
                 <div class="course-programming slide1">
                     <p class="programming_title">Программирование</p>
                     <div class="programming__content">
@@ -128,8 +146,7 @@
                     </div>
                     <div class="learn-more">
                         <button class="get-info">
-                            
-                            <a href="https://cleverland.by/">Подробнее</a>
+                            <p>Подробнее</p>
                             <img src="./images/arrow-right.svg" class="arrow-right">
                         </button>
                     </div>
@@ -138,7 +155,6 @@
                     <p class="english_title">Английский язык</p>
                     <div class="english__content">
                         <p class="english__decription-text">
-
                         </p>
                         <div class="english__img">
                             <img src="./images/ART-en-svg.svg" alt="">
@@ -148,13 +164,17 @@
                         <p>Скоро</p>
                     </div>
                 </div>
+
+            </div>
+            <!--<div class="courses-list" id="courses-list2">
+                
             </div>
             <div class="controls">
                 <input type="radio" class="radio" name="slider2" id="slide4" value="1" checked>
                 <label for="slide4"></label>
                 <input type="radio" class="radio" name="slider2" id="slide5" value="2">
                 <label for="slide5"></label>
-            </div>
+            </div>-->
         </div>
         </div>
     </section>
@@ -209,14 +229,16 @@
     </section>
     <footer class="footer">
         <div class="footer__map">
-            
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad53be76f446a6fc7104c8a1bbf9d87bfced063f9b4ea0bc8c2414506acc1b06f&amp;source=constructor" width="860" height="298" frameborder="0"></iframe>
         </div>
         <span class="footer__company">2020, Be digital</span>
 
     </footer>
-    
+
 
     
-    <script src="./index.js"></script>
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
