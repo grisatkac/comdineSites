@@ -105,7 +105,7 @@ a {
     padding-top: 164px;
     padding-bottom: 43.125%;
     margin-bottom: 15.625%;
-    /*background-image: url('./images/image-main.png');*/
+    background-image: url('../images/image-main.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -736,7 +736,7 @@ a {
 
     .main-header {
         height: 800px;
-        background-image: url('./images/imgs-768/image-main.png');
+        background-image: url('../images/imgs-768/image-main.png');
         margin-bottom: 13.02%;
     }
 
@@ -1154,7 +1154,7 @@ a {
     }
 
     .main-header {
-        background-image: url('./images/imgs-834/image-main.png');
+        background-image: url('../images/imgs-834/image-main.png');
         margin-bottom: 11.99%;
     }
 
