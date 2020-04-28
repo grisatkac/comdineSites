@@ -5,6 +5,8 @@
 
 html {
     width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,6 +24,12 @@ a {
     color: #505565;
 }
 
+.scroll-down {
+    transform: translateY(-51px);
+    -moz-transform: translateY(-37px);
+    -webkit-transform: translateY(-37px);
+}
+
 
 .header {
     width: 100vw;
@@ -33,7 +41,7 @@ a {
     top: 0;
     left: 0;
     z-index: 999;
-    display: none;
+    
 }
 
 .headers {
