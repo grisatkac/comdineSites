@@ -35,8 +35,8 @@
         </div>
         
         <div class="mobile-menu">
-            <a href="#" class="mobile-menu-link">Курсы</a>
-            <a href="#" class="mobile-menu-link">Вопросы</a>
+            <a  onclick="jumpToLink('adults')" class="mobile-menu-link">Курсы</a>
+            <a  onclick="jumpToLink('contact-us')" class="mobile-menu-link">Вопросы</a>
             <a href="tel:+375295694550" class="mobile-menu-link">+375 29 569 45
             50</a>
             <a href="mailto:hello@cleverland.by" class="mobile-menu-link">info@clevertec.ru</a>
@@ -57,18 +57,6 @@
             Курсы для взрослых
         </h5>
         <div class="courses-wrapper">
-            <!--в  диве ниже может быть .slide1-->
-            <!--<div class="courses-list" id="courses-list">
-                
-            </div>
-            <div class="controls">
-                <input type="radio" class="radio" name="slider" id="slide1" value="1" checked>
-                <label for="slide1"></label>
-                <input type="radio" class="radio" name="slider" id="slide2" value="2">
-                <label for="slide2"></label>
-                <input type="radio" class="radio" name="slider" id="slide3" value="3">
-                <label for="slide3"></label>
-            </div>-->
             <div class="slider">
                 <div class="course-frontend ">
                     <p class="frontend__title">Фронтенд-разработка</p>
@@ -166,15 +154,6 @@
                 </div>
 
             </div>
-            <!--<div class="courses-list" id="courses-list2">
-                
-            </div>
-            <div class="controls">
-                <input type="radio" class="radio" name="slider2" id="slide4" value="1" checked>
-                <label for="slide4"></label>
-                <input type="radio" class="radio" name="slider2" id="slide5" value="2">
-                <label for="slide5"></label>
-            </div>-->
         </div>
         </div>
     </section>
@@ -231,12 +210,9 @@
         <div class="footer__map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad53be76f446a6fc7104c8a1bbf9d87bfced063f9b4ea0bc8c2414506acc1b06f&amp;source=constructor" width="860" height="298" frameborder="0"></iframe>
         </div>
-        <span class="footer__company">2020, Be digital</span>
-
+        <div class="footer__company"> <p>2020, Be digital</p> </div>
+        <!--<span class="footer__company"></span>-->
     </footer>
-
-
-    
 
     <script src="js/slick.min.js"></script>
     <script src="js/index.js"></script>
