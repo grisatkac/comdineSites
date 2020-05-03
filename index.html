@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id='html'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cleverland</title>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js
     "></script> 
     <link rel="stylesheet" href="css/style.css">   
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <title>Cleverland</title>
+    
 
     
 </head>
@@ -45,6 +45,30 @@
         </div>
 
     </header>
+    <div class="modal-contact-us-wrapper">
+        <div class="modal-contact-us">
+            <div class="close-modal-contact-us">
+                <img src="images/imgs-768/icon_close_24px.svg">
+            </div>
+            <div class="form-cotact-us">
+                <div class="main-content">
+                    <div class="form-title">
+                        Связаться с нами
+                    </div>
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="number" placeholder="Телефон">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="text" name='text' placeholder="Текст сообщения"> 
+                </div>
+                <div class="success-send-claim"></div>
+                <button>Отправить</button>   
+            </div>
+            
+        </div>
+
+
+        
+    </div>
     <section class="main-header">
         <div class="header-title"> 
             <h4>
@@ -180,7 +204,7 @@
                 </div>
                 
                 <div class="learn-more">
-                    <button class="get-info">
+                    <button class="get-info" id="contact-us">
                         <p>Связаться</p>
                         <img src="./images/arrow-right.svg" class="arrow-right">
                     </button>
@@ -188,6 +212,7 @@
             </div>
         </div>
     </section>
+    
     <section class="contact-us">
 
         <h5 class="contact-us-title">Остались вопросы?</h5>

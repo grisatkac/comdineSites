@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@700&display=swap');
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 html {
@@ -22,7 +23,11 @@ a {
     font-size: 14px;
     line-height: 21px;
     color: #505565;
+    outline: none;
+    
 }
+
+
 
 .scroll-down {
     transform: translateY(-51px);
@@ -76,6 +81,7 @@ a {
     font-size: 18px;
     line-height: 32px;
     text-decoration: none;
+    outline: none;
 }
 
 .nav-wrap>.mobile-menu-button {
@@ -671,6 +677,35 @@ a {
     margin: 24px auto 0px auto;
 }
 
+/* modal contact us */
+
+.modal-contact-us-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100000;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    background-color: #FFFFFF;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.modal-contact-us-wrapper .modal-contact-us {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0 88px 0;
+}
+
+.modal-contact-us .close-modal-contact-us img {
+    margin-left: 86.18%;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+
 /* contact-us */
 
 .contact-us {
@@ -716,6 +751,7 @@ a {
     line-height: 24px;
     color: #8B90A0;
     outline: none;
+    text-rendering: auto
 }
 .contact-us .contact-us-button {
     width: 100%;

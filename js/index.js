@@ -107,6 +107,8 @@ $(document).ready(() => {
 const mobileMenu = document.querySelector('.mobile-menu-button');
 const menu = document.querySelector('.mobile-menu');
 const header = document.querySelector('.header');
+const contactUsBtn = document.querySelector('#contact-us');
+const modalContactUs = document.querySelector('.modal-contact-us-wrapper');
 let menuOpened = false;
 let previousPosition = 0;
 
@@ -159,6 +161,12 @@ const jumpToLink = (link) => {
     menu.style.transform = "translateY(-101%)";
     menuOpened = false;
 };
+
+contactUsBtn.addEventListener('click', () => {
+    modalContactUs.style.display = "flex";
+    document.getElementById('html').style = 'overflow-y: hidden';
+
+})
 
 
 
