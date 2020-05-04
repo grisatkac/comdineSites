@@ -1210,6 +1210,21 @@ a {
     .area__decsription-text {
         text-align: start;
     }
+    
+    .rent .learn-more {
+        width: 14%;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .get-info {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .get-info .arrow-right {
+        width: 6.5%;
+    }
 
     .contact-us {
         margin: 0 auto;

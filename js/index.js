@@ -166,13 +166,11 @@ const jumpToLink = (link) => {
 contactUsBtn.addEventListener('click', () => {
     modalContactUs.style.display = "flex";
     document.getElementById('html').style = 'overflow-y: hidden';
-
 })
 
 closeModalContactus.addEventListener('click', () => {
     modalContactUs.style.display = "none";
     document.getElementById('html').style = 'overflow-y: auto';
-
 })
 
 
