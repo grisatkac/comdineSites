@@ -109,6 +109,7 @@ const menu = document.querySelector('.mobile-menu');
 const header = document.querySelector('.header');
 const contactUsBtn = document.querySelector('#contact-us');
 const modalContactUs = document.querySelector('.modal-contact-us-wrapper');
+const closeModalContactus = document.querySelector('.close-modal-contact-us');
 let menuOpened = false;
 let previousPosition = 0;
 
@@ -165,6 +166,12 @@ const jumpToLink = (link) => {
 contactUsBtn.addEventListener('click', () => {
     modalContactUs.style.display = "flex";
     document.getElementById('html').style = 'overflow-y: hidden';
+
+})
+
+closeModalContactus.addEventListener('click', () => {
+    modalContactUs.style.display = "none";
+    document.getElementById('html').style = 'overflow-y: auto';
 
 })
 
